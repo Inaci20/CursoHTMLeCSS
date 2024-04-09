@@ -1,0 +1,21 @@
+
+body{
+    background-color: black;
+    }
+h1{
+    color: white;
+    text-align: center;
+    }
+.container{
+    text-align: center;
+    }
+    .A a{
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+        color: white;
+    }
+    .V{
+        text-align: center;
+    }
