@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: #383838;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        Table
+            Caption
+            Thead
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">91 320 78</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>0000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa laborum voluptatibus excepturi facere, doloremque voluptatum sapiente ex quaerat voluptate animi accusamus molestias exercitationem tempora rem ab ratione hic fuga repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio, rem impedit voluptatibus ipsa quo dolores, tenetur hic doloremque enim voluptates quasi neque illum labore. Repudiandae nihil excepturi cumque enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis obcaecati quis, reprehenderit animi hic, a possimus doloremque, earum illo harum magnam aliquam eveniet laudantium repudiandae accusamus odio incidunt id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque harum aliquid quisquam architecto quae voluptate hic, ipsa nihil ducimus rem aperiam quos, obcaecati in beatae, vero ratione necessitatibus consequatur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa laborum voluptatibus excepturi facere, doloremque voluptatum sapiente ex quaerat voluptate animi accusamus molestias exercitationem tempora rem ab ratione hic fuga repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio, rem impedit voluptatibus ipsa quo dolores, tenetur hic doloremque enim voluptates quasi neque illum labore. Repudiandae nihil excepturi cumque enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis obcaecati quis, reprehenderit animi hic, a possimus doloremque, earum illo harum magnam aliquam eveniet laudantium repudiandae accusamus odio incidunt id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque harum aliquid quisquam architecto quae voluptate hic, ipsa nihil ducimus rem aperiam quos, obcaecati in beatae, vero ratione necessitatibus consequatur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa laborum voluptatibus excepturi facere, doloremque voluptatum sapiente ex quaerat voluptate animi accusamus molestias exercitationem tempora rem ab ratione hic fuga repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio, rem impedit voluptatibus ipsa quo dolores, tenetur hic doloremque enim voluptates quasi neque illum labore. Repudiandae nihil excepturi cumque enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis obcaecati quis, reprehenderit animi hic, a possimus doloremque, earum illo harum magnam aliquam eveniet laudantium repudiandae accusamus odio incidunt id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque harum aliquid quisquam architecto quae voluptate hic, ipsa nihil ducimus rem aperiam quos, obcaecati in beatae, vero ratione necessitatibus consequatur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa laborum voluptatibus excepturi facere, doloremque voluptatum sapiente ex quaerat voluptate animi accusamus molestias exercitationem tempora rem ab ratione hic fuga repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio, rem impedit voluptatibus ipsa quo dolores, tenetur hic doloremque enim voluptates quasi neque illum labore. Repudiandae nihil excepturi cumque enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis obcaecati quis, reprehenderit animi hic, a possimus doloremque, earum illo harum magnam aliquam eveniet laudantium repudiandae accusamus odio incidunt id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque harum aliquid quisquam architecto quae voluptate hic, ipsa nihil ducimus rem aperiam quos, obcaecati in beatae, vero ratione necessitatibus consequatur!</p>
+    
+</body>
+</html>
